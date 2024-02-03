@@ -5,7 +5,7 @@ services:
     container_name: shiny
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: shiny.Dockerfile
     restart: always
     user: 'root'
     # Uncomment the lines below to disable application logs STDOUT output
