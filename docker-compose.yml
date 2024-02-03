@@ -1,0 +1,20 @@
+version: "3.0"
+
+services:
+  shiny:
+    container_name: shiny
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    user: 'root'
+    # Uncomment the lines below to disable application logs STDOUT output
+    # environment:
+    #   - APPLICATION_LOGS_TO_STDOUT=false
+    ports:
+      - '8180:8180'
+    volumes:
+      - 'shiny_logs:/var/log/shiny-server'
+      - './src:/home/shiny-app/'
+volumes:
+  shiny_logs:
