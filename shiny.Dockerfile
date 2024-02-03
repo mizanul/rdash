@@ -10,6 +10,7 @@ RUN apt-get update && \
 
 # Install shiny package
 RUN R -e "install.packages('shiny', repos='https://cran.rstudio.com/')"
+RUN R -e "install.packages(c('dplyr', 'ggplot2', 'gapminder'))"
 
 # Set the working directory
 WORKDIR /app
