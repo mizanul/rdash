@@ -1,5 +1,15 @@
 # Database DDL and DML
 
+For database practice
+
+You can use the database at http://74.208.212.110:8081/
+
+Server: mh_db
+
+Username: root
+
+Password: *********
+
 
 ## DDL (Data Definition Language)
 
